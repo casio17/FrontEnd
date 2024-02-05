@@ -1,0 +1,18 @@
+body{
+    background-color: #c0a16438;
+    border: rgba(0, 0, 0, 0) solid;
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 6%;
+}
+label{
+    padding-right: 10%;
+}
+
+input{
+    padding-right: 6%;
+}
