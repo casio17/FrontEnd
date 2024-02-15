@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<header>
+    <h1>E-Commerce</h1>
+    <button>Cart : <span id="cart-number">0</span></button>
+    <button>Total : <span id="cart-total">0</span></button>
+    
+</header>
+
+<body>
+    <div id="items">
+        <div id="item">
+            <div id="imag">
+                <br><img src="img1.webp" alt="not found">
+            </div>
+            <div id="des">
+                <h3>Apple iphone 15</h3>
+                <p><ul>
+                    <li>128GB</li>
+                    <li>6 inch</li>
+                    <li>A14 Bionic Chip</li>
+                </ul></p>
+                <p></p>
+                <h2>₹65,999     <del>₹69,999</del></h2>
+                <button onclick="AddCartNo('samsung', 65000)">Add to Cart</button>
+                <button onclick="BuyNow()">Buy Now</button>
+                <hr>
+            </div>
+        </div>
+
+        <div id="item">
+            <div id="imag2">
+                <br><img src="img2.webp" alt="not found">
+            </div>
+            <div id="des">
+                <h3>Apple iphone 15</h3>
+                <p><ul>
+                    <li>256GB</li>
+                    <li>6.6 inch</li>
+                    <li>A16 Bionic Chip</li>
+                </ul></p>
+                <p></p>
+                <h2>₹65,999     <del>₹69,999</del></h2>
+                <button onclick="AddCartNo('Apple', 65000)">Add to Cart</button>
+                <button onclick="BuyNow()">Buy Now</button>
+                <hr>
+            </div>
+        </div>
+
+        <div id="item">
+            <div id="imag">
+                <br><img src="img3.webp" alt="not found">
+            </div>
+            <div id="des">
+                <h3>Apple iphone 15</h3>
+                <p><ul>
+                    <li>128GB</li>
+                    <li>6.4 inch</li>
+                    <li>A13 Chip</li>
+                </ul></p>
+                <p></p>
+                <h2>₹65,999     <del>₹69,999</del></h2>
+                <button onclick="AddCartNo('vivo', 61000)">Add to Cart</button>
+                <button onclick="BuyNow()">Buy Now</button>
+                <hr>
+            </div>
+        </div>
+
+        <div id="item">
+            <div id="imag">
+                <br><img src="img3.webp" alt="not found">
+            </div>
+            <div id="des">
+                <h3>Apple iphone 15</h3>
+                <p><ul>
+                    <li>256GB</li>
+                    <li>6 inch</li>
+                    <li>A16 Chip</li>
+                </ul></p>
+                <p></p>
+                <h2>₹65,999     <del>₹69,999</del></h2>
+                <button onclick="AddCartNo('samsung', 62000)">Add to Cart</button>
+                <button onclick="BuyNow()">Buy Now</button>
+                <hr>
+            </div>
+        </div>
+
+        <div id="item">
+            <div id="imag">
+                <br><img src="img4.webp" alt="not found">
+            </div>
+            <div id="des">
+                <h3>Apple iphone 15</h3>
+                <p><ul>
+                    <li>128GB</li>
+                    <li>6.2 inch</li>
+                    <li>A14 Bionic Chip</li>
+                </ul></p>
+                <p></p>
+                <h2>₹65,999     <del>₹69,999</del></h2>
+                <p></p>
+                <button onclick="AddCartNo('vivo', 55000)">Add to Cart</button>
+                <button onclick="BuyNow()">Buy Now</button>
+                <hr>
+            </div>
+        </div>
+
+
+        <div id="item">
+            <div id="imag">
+                <br><img src="img1.webp" alt="not found">
+            </div>
+            <div id="des">
+                <h3>Apple iphone 15</h3>
+                <p><ul>
+                    <li>128GB</li>
+                    <li>6.1 inch</li>
+                    <li>A16 Bionic Chip</li>
+                </ul></p>
+                <p></p>
+                <h2>₹65,999     <del>₹69,999</del></h2>
+                <button onclick="AddCartNo('samsung', 65000)">Add to Cart</button>
+                <button onclick="BuyNow()">Buy Now</button>
+                <hr>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <script>
+
+        let count = 0;
+        let tot = 0;
+        function AddCartNo(prod,price){
+            count += 1;
+            tot += price;
+            document.getElementById('cart-number').innerText = count;
+        }
+
+        function BuyNow(){
+            if(tot==0){
+                alert('Cart is empty')
+            }
+            else{
+                //alert(`Check out: ₹${tot}`);
+                document.getElementById('cart-total').innerText = tot;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
