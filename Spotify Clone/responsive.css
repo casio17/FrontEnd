@@ -1,0 +1,15 @@
+
+@media (max-width:788px) {
+    .foot1{
+        flex-direction:column;    
+    }
+
+    .head{
+        height:20%;
+    }
+
+    .sec2{
+        justify-content:start;
+    }
+   
+}
